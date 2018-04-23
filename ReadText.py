@@ -26,8 +26,10 @@
 #coding: UTF-8
  
 f = open('data.txt')
-line = f.readline()  
-while line:
-    print line
-    line = f.readline()
+ReadData = f.readline()
+
+while ReadData:
+    print 'OriginalData'+ReadData
+    print ReadData.count(' ')
+    ReadData = f.readline()
 f.close
